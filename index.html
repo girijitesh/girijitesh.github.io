@@ -2,82 +2,127 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jitesh Giri - Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jitesh Giri | Full Stack Developer</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
 
-<nav>
-  <div class="nav-container">
-    <h1>Jitesh</h1>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#resume">Resume</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </div>
-</nav>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Jitesh</h1>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </nav>
+  </header>
 
-<section id="home" class="section full-screen">
-  <div class="home-content">
-    <div class="home-text">
-      <h2>Hello, I'm <span class="highlight">Jitesh Giri</span></h2>
-      <p>Aspiring Full-Stack Developer | Python, Java | Passionate Learner</p>
+  <section id="home" class="section hero">
+    <div class="hero-content" data-aos="fade-up">
+      <img src="images/profile.jpg" alt="Profile" class="profile-pic" />
+      <h2>Hello, I'm Jitesh Giri</h2>
+      <h3><span id="typed"></span></h3>
+      <a href="resume.pdf" class="btn" target="_blank">📄 View Resume</a>
     </div>
-    <div class="home-image">
-      <img src="images/profile.jpg" alt="Profile Photo" />
+  </section>
+
+  <section id="about" class="section" data-aos="fade-up">
+    <h2>About Me</h2>
+    
+  <p>I’m Jitesh Giri, a final-year BSc IT student with a strong foundation in computer science and a deep interest in full-stack development. I enjoy turning simple ideas into real digital products that are efficient, responsive, and user-friendly. My goal is to continuously learn and implement new technologies to solve real-world problems through code. I am passionate about writing clean code, designing intuitive interfaces, and developing solutions that add value.</p>
+  <p>My portfolio showcases my ability to build professional-looking websites and applications from scratch using modern technologies and frameworks. Whether it’s frontend, backend, or version control, I strive to maintain best practices and write scalable code. I believe in learning-by-doing and actively work on projects that enhance my understanding and problem-solving abilities.</p>
+</section>
+
+<section id="skills" class="section" data-aos="fade-right">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <span class="hover-pop"><strong>HTML</strong> – Structure of webpages, creating layouts and content.</span>
+      <span class="hover-pop"><strong>CSS</strong> – Styling and designing responsive user interfaces.</span>
+      <span class="hover-pop"><strong>JavaScript</strong> – Adding interactivity, animations, and dynamic behavior.</span>
+      <span class="hover-pop"><strong>Python</strong> – Backend scripting, logic, data processing and automation.</span>
+      <span class="hover-pop"><strong>Java</strong> – Building GUI applications, understanding OOP concepts.</span>
+      <span class="hover-pop"><strong>C++</strong> – Core programming, logic building, and competitive coding.</span>
+      <span class="hover-pop"><strong>Git</strong> – Version control, collaborative coding, tracking changes.</span>
+      <span class="hover-pop"><strong>GitHub</strong> – Hosting code, sharing projects, open-source collaboration.</span>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="about" class="section">
-  <h2>About Me</h2>
-  <p>I’m a BSc IT student exploring the world of full-stack development. I enjoy turning ideas into reality using code. I focus on clean, minimal design and user-friendly functionality.</p>
-</section>
+  <style>
+    .hover-pop {
+      transition: transform 0.3s ease;
+      display: inline-block;
+    }
+    .hover-pop:hover {
+      transform: scale(1.05);
+    }
+  </style>
 
-<section id="skills" class="section">
-  <h2>Skills</h2>
-  <div class="skills">
-    <span>HTML</span><span>CSS</span><span>JavaScript</span>
-    <span>Python</span><span>Java</span><span>C</span><span>C++</span>
-    <span>Git</span><span>GitHub</span>
-  </div>
-</section>
+  <p>My skills span across both frontend and backend technologies, allowing me to build complete web applications. I am proficient in HTML, CSS, and JavaScript for frontend development, and I use Python and Java for backend logic. I also have experience with version control using Git and hosting projects on GitHub.</p>
 
-<section id="projects" class="section">
-  <h2>Projects</h2>
-  <ul>
-    <li><strong>ToDo App:</strong> Python CLI app to manage tasks. (Adding Soon)</li>
-    <li><strong>Java GUI Calculator:</strong> A basic calculator project. (Adding Soon)</li>
-    <!-- You can add more projects (like games) later -->
-  </ul>
-</section>
 
-<section id="resume" class="section">
-  <h2>Resume</h2>
-  <ul>
-    <li><strong>Name:</strong> Jitesh Giri</li>
-    <li><strong>Education:</strong> BSc in IT</li>
-    <li><strong>Languages:</strong> Python, Java, C/C++, HTML, CSS, JavaScript</li>
-    <li><strong>Soft Skills:</strong> Communication, Problem-solving, Teamwork</li>
-  </ul>
-  <p><a href="resume.pdf" target="_blank" class="resume-button">📄 Download My Resume (PDF)</a></p>
-</section>
 
-<section id="contact" class="section">
-  <h2>Contact</h2>
-  <p>Email: jitesh7giri@gmail.com</p>
-  <p>GitHub: <a href="https://github.com/girijitesh" target="_blank">github.com/girijitesh</a></p>
-</section>
+  <section id="projects" class="section dark" data-aos="fade-left">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="card">
+        <h3>ToDo CLI App</h3>
+        <p>A command-line task manager built using Python.</p>
+        <a href="#">GitHub</a>
+      </div>
+      <div class="card">
+        <h3>Java Calculator</h3>
+        <p>Simple Java Swing calculator for basic operations.</p>
+        <a href="#">GitHub</a>
+      </div>
+      <div class="card">
+        <h3>Personal Portfolio</h3>
+        <p>This very website made using HTML, CSS & JS.</p>
+        <a href="#">Live</a>
+      </div>
+    </div>
+  </section>
 
-<footer>
-  <p>&copy; 2025 Jitesh Giri. All rights reserved.</p>
-</footer>
+  <section id="resume" class="section" data-aos="fade-up">
+    <h2>Resume</h2>
+    <iframe src="resume.pdf" width="90%" height="500px" style="border:none;"></iframe>
+    <br>
+    <a href="resume.pdf" class="btn" target="_blank">📥 Download PDF</a>
+  </section>
 
-<script src="js/script.js"></script>
+  <section id="contact" class="section" data-aos="fade-up">
+    <h2>Contact Me</h2>
+    <div class="social-icons">
+      <a href="https://instagram.com/jiteshh.giri" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://in.linkedin.com/in/jitesh-giri-715125370" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/girijitesh" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+    <p>📞 <a href="tel:+919152262392">+91-9152262392</a></p>
+    <p>🏠 Address: Bindwasini Chl,Gavdevi Vakola Pipeline,Santacruz (E),Mumbai-400055</p>
+    <a href="https://wa.me/9152262392" class="btn" target="_blank">💬 Chat on WhatsApp</a>
+
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <button id="toTopBtn" title="Go to top">⬆️</button>
+    <p>&copy; 2025 Jitesh Giri. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
