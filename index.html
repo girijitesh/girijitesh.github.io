@@ -476,9 +476,9 @@ internships, and continuous self-learning.
 
                     <h4>Location</h4>
 
-                    <a href="https://maps.google.com" target="_blank">
-                        Wadala (E), Mumbai
-                    </a>
+                   <a href="https://maps.google.com/?q=Antop+Hill+Wadala+Mumbai" target="_blank">
+Antop Hill, Wadala, Mumbai
+</a>
 
                 </div>
 
@@ -488,18 +488,23 @@ internships, and continuous self-learning.
 
         <!-- RIGHT -->
 
-        <form class="contact-form">
+        <form class="contact-form"
+         action="https://api.web3forms.com/submit"
+      method="POST">
 
-            <input type="text" placeholder="Your Name">
+           <input type="hidden" name="access_key" value="6a5df41d-fc46-47bb-851e-1f2c31e6f52c">
 
-            <input type="email" placeholder="Your Email">
+    <input type="hidden" name="subject" value="New Portfolio Contact Form Submission">
 
-            <textarea placeholder="Your Message"></textarea>
+    <input type="hidden" name="from_name" value="Jitesh Portfolio">
 
-            <button type="submit">
-                Send Message
-            </button>
+    <input type="text" name="name" placeholder="Your Name" required>
 
+    <input type="email" name="email" placeholder="Your Email" required>
+
+    <textarea name="message" placeholder="Your Message" required></textarea>
+
+    <button type="submit">Send Message</button>
         </form>
 
     </div>
