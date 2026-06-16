@@ -1477,3 +1477,152 @@ html{
 
     margin-bottom:20px;
 }
+
+/* =========================
+   MOBILE RESPONSIVE FIX
+========================= */
+
+@media screen and (max-width:768px){
+
+.navbar{
+padding:18px 20px;
+}
+
+.hero{
+flex-direction:column;
+text-align:center;
+padding:120px 20px 60px;
+gap:40px;
+}
+
+.hero-left{
+width:100%;
+display:flex;
+justify-content:center;
+}
+
+.hero-left img{
+width:280px;
+height:auto;
+max-width:100%;
+}
+
+.hero-right{
+max-width:100%;
+}
+
+.hero-right h1{
+font-size:3rem;
+line-height:1.1;
+word-break:break-word;
+}
+
+.hero-right h2{
+font-size:1.5rem;
+}
+
+.typing-text{
+font-size:1.8rem;
+}
+
+.hero-buttons{
+flex-direction:column;
+align-items:center;
+}
+
+.hero-buttons a{
+width:220px;
+text-align:center;
+}
+
+.social-links{
+justify-content:center;
+}
+
+.overview{
+grid-template-columns:1fr 1fr;
+gap:15px;
+padding:60px 20px;
+}
+
+.overview-card{
+padding:20px;
+min-height:auto;
+}
+
+.about-section{
+padding:80px 20px;
+}
+
+.about-left h2{
+font-size:2.5rem;
+}
+
+.about-right{
+grid-template-columns:1fr;
+}
+
+.skills-section{
+padding:80px 20px;
+}
+
+.section-header h2{
+font-size:2.3rem;
+}
+
+.skills-grid{
+grid-template-columns:1fr;
+gap:20px;
+}
+
+.skills-grid .skill-category:nth-child(4){
+grid-column:auto;
+}
+
+.experience-section{
+padding:80px 20px;
+}
+
+.timeline-item{
+flex-direction:column;
+gap:15px;
+}
+
+.timeline-year{
+margin-bottom:0;
+}
+
+.timeline::before{
+display:none;
+}
+
+.contact-section{
+padding:80px 20px;
+}
+
+.contact-container{
+grid-template-columns:1fr;
+gap:30px;
+}
+
+.certifications-grid{
+gap:20px;
+}
+
+.cert-card{
+width:100%;
+}
+
+.footer{
+padding:60px 20px;
+}
+
+.footer h2{
+font-size:2rem;
+}
+
+.scroll-indicator{
+display:none;
+}
+
+}
